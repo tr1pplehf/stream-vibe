@@ -1,3 +1,5 @@
+import '@/styles/example.scss'
+
 export default function () {
   return (
     <>
