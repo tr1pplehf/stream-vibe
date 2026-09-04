@@ -1,4 +1,10 @@
-import { defineConfig, pluginBundle, pluginSsg } from "minista"
+import {
+  defineConfig,
+  pluginBundle,
+  pluginImage,
+  pluginSsg,
+  pluginSvg
+} from "minista"
 import path from 'path'
 
 export default defineConfig({
@@ -10,7 +16,10 @@ export default defineConfig({
       src: ["/src/layouts/global.{tsx,jsx}", "/src/pages/**/*.{tsx,jsx,mdx}"],
       outName: "bundle",
       useExportCss: true,
-    })],
+    }),
+    pluginImage(),
+    pluginSvg(),
+  ],
   resolve: {
     alias: [{
       find: '@/',
