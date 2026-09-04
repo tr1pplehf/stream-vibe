@@ -7,7 +7,7 @@ export default defineConfig({
       layout: "/src/layouts/global.{tsx,jsx}",
     }),
     pluginBundle({
-      src: ["/src/styles/index.{tsx,jsx,js}", "/src/pages/**/*.{tsx,jsx,mdx}"],
+      src: ["/src/layouts/global.{tsx,jsx}", "/src/pages/**/*.{tsx,jsx,mdx}"],
       outName: "bundle",
       useExportCss: true,
     })],
