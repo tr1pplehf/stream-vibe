@@ -2,8 +2,8 @@ import {
   defineConfig,
   pluginBundle,
   pluginImage,
-  pluginSsg,
-  pluginSvg
+  pluginSprite,
+  pluginSsg
 } from "minista"
 import path from 'path'
 
@@ -18,8 +18,26 @@ export default defineConfig({
       useExportCss: true,
     }),
     pluginImage(),
-    pluginSvg(),
+    pluginSprite({
+      config: {
+        plugins: [
+          {
+            name: 'removeAttrs',
+            params: {
+              attrs: ['fill', 'stroke']
+            }
+          }
+        ]
+      }
+    }),
   ],
+  /*assets: {
+    icons: {
+      svgstoreOptions: {
+        cleanSymbols: ["fill", "stroke"]
+      }
+    }
+  },*/
   resolve: {
     alias: [{
       find: '@/',
@@ -34,5 +52,5 @@ export default defineConfig({
         `
       }
     }
-  }
+  },
 })

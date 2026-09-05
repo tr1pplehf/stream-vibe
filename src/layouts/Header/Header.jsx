@@ -45,11 +45,16 @@ const Header = (props) => {
         <Button
           className="header__button"
           label="Search"
+          isLabelHidden
+          mode="transparent"
+          iconSrc="/src/assets/sprite/search.svg"
         />
         <Button
-          href="/"
-          label="Notifications"
+          className="header__button"
+          label="Search"
           isLabelHidden
+          mode="transparent"
+          iconSrc="/src/assets/sprite/notifications.svg"
         />
       </div>
     </div>
