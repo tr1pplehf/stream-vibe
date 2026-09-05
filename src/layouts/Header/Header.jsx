@@ -8,15 +8,24 @@ const Header = (props) => {
   const {
     url,
   } = props
-  const menuItems = [{
-    label: 'Home', href: '/'
-  }, {
-    label: 'Movies & Shows', href: '/movies'
-  }, {
-    label: 'Support', href: '/support'
-  }, {
-    label: 'Subscriptions', href: '/subscriptions'
-  }]
+  const menuItems = [
+    {
+      label: 'Home',
+      href: '/'
+    },
+    {
+      label: 'Movies & Shows',
+      href: '/movies'
+    },
+    {
+      label: 'Support',
+      href: '/support'
+    },
+    {
+      label: 'Subscriptions',
+      href: '/subscriptions'
+    },
+  ]
 
   return (<header className="header">
     <div className="header__inner container">
@@ -24,41 +33,45 @@ const Header = (props) => {
         className="header__logo"
         loading="eager"
       />
-      <nav className="header__menu">
-        <ul className="header__menu-list">
-          {menuItems.map(({ label, href }, index) => (
-            <li
-              className="header__menu-item"
-              key={index}
-            >
-              <a
-                className={classNames('header__menu-link', {
-                  'is-active': href === url
-                })}
-                href={href}
+      <dialog
+        className="header__overlay-menu-dialog"
+      >
+        <nav className="header__menu">
+          <ul className="header__menu-list">
+            {menuItems.map(({ label, href }, index) => (
+              <li
+                className="header__menu-item"
+                key={index}
               >
-                {label}
-              </a>
-            </li>))}
-        </ul>
-      </nav>
-      <div className="header__actions">
-        <Button
-          className="header__button"
-          label="Search"
-          isLabelHidden
-          mode="transparent"
-          iconSrc="/src/assets/sprite/search.svg"
-        />
-        <Button
-          className="header__button"
-          label="Search"
-          isLabelHidden
-          mode="transparent"
-          iconSrc="/src/assets/sprite/notifications.svg"
-        />
-      </div>
-      <BurgerButton className="header__burger-button" />
+                <a
+                  className={classNames('header__menu-link', {
+                    'is-active': href === url
+                  })}
+                  href={href}
+                >
+                  {label}
+                </a>
+              </li>))}
+          </ul>
+        </nav>
+        <div className="header__actions">
+          <Button
+            className="header__button"
+            label="Search"
+            isLabelHidden
+            mode="transparent"
+            iconSrc="/src/assets/sprite/search.svg"
+          />
+          <Button
+            className="header__button"
+            label="Search"
+            isLabelHidden
+            mode="transparent"
+            iconSrc="/src/assets/sprite/notifications.svg"
+          />
+        </div>
+      </dialog>
+      <BurgerButton className="header__burger-button visible-tablet" />
     </div>
   </header>)
 }
