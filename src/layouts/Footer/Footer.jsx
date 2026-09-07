@@ -47,6 +47,7 @@ const Footer = (props) => {
       ]
     }
   ]
+  const extraLinks = ['Terms of Use', 'Privacy Policy', 'Cookie Policy']
 
   return (
     <footer className="footer">
@@ -72,7 +73,16 @@ const Footer = (props) => {
             </div>
           ))}
         </nav>
-        <div className="footer__extra"></div>
+        <div className="footer__extra">
+          <p className="footer__copyright">
+            @<time dateTime="2023">2023</time> StreamVibe, All Rights Reserved.
+          </p>
+          <div className="footer__extra-links">
+            {extraLinks.map((link, index) => (
+              <a className="footer__extra-link" href="/" key={index}>{link}</a>
+            ))}
+          </div>
+        </div>
       </div>
     </footer>
   )

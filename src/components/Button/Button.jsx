@@ -19,6 +19,7 @@ const Button = (props) => {
      * 'before' | 'after'
      */
     iconPosition = 'before',
+    hasFillIcon,
   } = props
   const isLink = href !== undefined
   const Component = isLink ? 'a' : 'button'
@@ -30,6 +31,7 @@ const Button = (props) => {
     <Icon
       className="button__icon"
       src={iconSrc}
+      hasFill={hasFillIcon}
     />
   )
 
