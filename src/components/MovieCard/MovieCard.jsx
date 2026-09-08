@@ -1,6 +1,7 @@
 import './MovieCard.scss'
 import { Image } from 'minista/assets'
 import Badge from '@/components/Badge'
+import RatingView from '@/components/RatingView'
 
 const MovieCard = (props) => {
   const {
@@ -8,6 +9,8 @@ const MovieCard = (props) => {
     imgSrc,
     duration,
     views,
+    released,
+    rating,
     href = '/movie',
   } = props
 
@@ -32,6 +35,11 @@ const MovieCard = (props) => {
             {duration}
           </Badge>
         )}
+        {rating && (
+          <Badge className="movie-card__rating-badge">
+            <RatingView {...rating} />
+          </Badge>
+        )}
         {views && (
           <Badge
             iconSrc="/src/assets/sprite/eye.svg"
@@ -41,6 +49,12 @@ const MovieCard = (props) => {
             {views}
           </Badge>
         )}
+        {released && (
+          <Badge className="movie-card__released-badge">
+            Released at <time className="movie-card__released-badge-label" dateTime={released.dateTime}>{released.label}</time>
+          </Badge>
+        )}
+
       </div>
     </a>
   )
