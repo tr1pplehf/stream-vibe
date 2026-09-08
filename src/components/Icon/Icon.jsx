@@ -8,10 +8,14 @@ const Icon = (props) => {
     className,
     src,
     hasFill = false,
+    ariaLabel,
   } = props
 
   return (
-    <span className={classNames(className, 'icon')}>
+    <span
+      className={classNames(className, 'icon')}
+      aria-label={ariaLabel}
+    >
       <Sprite
         src={src}
         fill={hasFill ? 'currentColor' : 'none'}

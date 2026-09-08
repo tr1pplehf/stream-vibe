@@ -19,7 +19,7 @@ const Collections = (props) => {
         title: collectionGroup.title,
         children: (
           <div className="collections__group">
-            <p className="collections__tittle hidden-mobile">
+            <p className="collections__title hidden-mobile">
               {collectionGroup.title}
             </p>
             {collectionGroup.items.map((collectionItem, index) => {
