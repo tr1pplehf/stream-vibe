@@ -29,6 +29,7 @@ const MovieBannerCard = (props) => {
             className="movie-banner-card__play-button"
             iconSrc="/src/assets/sprite/play.svg"
             label="Play Now"
+            hasFillIcon
           />
           <div className="movie-banner-card__actions">
             <Button
