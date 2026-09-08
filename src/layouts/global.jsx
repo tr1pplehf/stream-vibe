@@ -3,6 +3,7 @@ import { Head } from 'minista/head'
 import Header from '@/layouts/Header'
 import Footer from '@/layouts/Footer'
 import Content from '@/layouts/Content'
+import Banner from '@/sections/Banner'
 
 export default function (props) {
   const {
@@ -45,8 +46,9 @@ export default function (props) {
         />
       </Head>
       <Header url={url} isFixed={isHeaderFixed} />
-      <Content>
+      <Content isResetPaddingTop={isHeaderFixed}>
         {children}
+        <Banner />
       </Content>
       <Footer />
     </>
