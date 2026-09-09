@@ -1,1 +1,1 @@
-export { default } from './ShowBanner'
+export { default } from './ShowBann3r'

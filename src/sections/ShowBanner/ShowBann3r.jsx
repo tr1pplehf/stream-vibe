@@ -1,9 +1,9 @@
 import './ShowBanner.scss'
 import MovieBannerCard from '@/components/MovieBannerCard'
 
-const ShowBanner = (props) => {
+const ShowBann3r = (props) => {
   const {} = props
-  const titleId = 'show-banner-title'
+  const titleId = 'show-title'
 
   return (
     <section
@@ -22,4 +22,4 @@ const ShowBanner = (props) => {
   )
 }
 
-export default ShowBanner  
+export default ShowBann3r
