@@ -8,6 +8,7 @@ const Seasons = (props) => {
 
   return (
     <AccordionGroup
+      className="seasons"
       mode="dark"
       isOrderedList={false}
     >
@@ -22,7 +23,13 @@ const Seasons = (props) => {
           key={index}
           isArrowButton
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, odit.
+          <ul className="seasons__list">
+            {episodes.map((episode, index) => (
+              <li className="seasons__item" key={index}>
+                {episode.title}
+              </li>
+            ))}
+          </ul>
         </Accordion>
       ))}
     </AccordionGroup>
