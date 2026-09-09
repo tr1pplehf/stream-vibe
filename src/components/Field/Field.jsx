@@ -13,6 +13,7 @@ const Field = (props) => {
     type,
     placeholder,
     isRequired,
+    inputMode,
   } = props
   const Component = type === 'textarea'
     ? 'textarea'
@@ -40,6 +41,7 @@ const Field = (props) => {
           type={type}
           placeholder={placeholder}
           required={isRequired}
+          inputMode={inputMode}
         />
       </div>
     </div>

@@ -1,5 +1,6 @@
 import './Support.scss'
 import { Image } from 'minista/assets'
+import Field from '@/components/Field'
 
 const Support = (props) => {
   const {} = props
@@ -30,7 +31,37 @@ const Support = (props) => {
         className="support__form"
         action=""
       >
-
+        <Field
+          className="support__form-cell"
+          label="First Name"
+          placeholder="Ivan"
+          isRequired
+        />
+        <Field
+          className="support__form-cell"
+          label="Last Name"
+          placeholder="Ivanov"
+        />
+        <Field
+          className="support__form-cell"
+          type="email"
+          label="Email"
+          placeholder="example@email.com"
+          isRequired
+        />
+        <Field
+          className="support__form-cell"
+          label="Phone Number"
+          placeholder="(999) 999-99-99"
+          inputMode="tel"
+        />
+        <Field
+          className="support__form-cell support__form-cell--wide"
+          label="Message"
+          type="textarea"
+          placeholder="Hi! I have a question..."
+          isRequired
+        />
       </form>
     </section>
   )
