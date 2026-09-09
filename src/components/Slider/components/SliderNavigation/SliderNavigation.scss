@@ -30,6 +30,10 @@
     bottom: fluid-to-laptop(20, 16);
   }
 
+  &--center {
+    justify-content: center;
+  }
+
   &__pagination {
     display: flex;
     column-gap: 3px;

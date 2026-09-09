@@ -16,37 +16,62 @@ const MovieDetails = () => {
       imgSrc: '/src/assets/images/cast/1.jpg',
       imgAlt: 'Ivan Ivanov'
     },
-
     {
       imgSrc: '/src/assets/images/cast/2.jpg',
       imgAlt: 'Ivan Ivanov'
     },
-
     {
       imgSrc: '/src/assets/images/cast/3.jpg',
       imgAlt: 'Ivan Ivanov'
     },
-
     {
       imgSrc: '/src/assets/images/cast/4.jpg',
       imgAlt: 'Ivan Ivanov'
     },
-
     {
       imgSrc: '/src/assets/images/cast/5.jpg',
       imgAlt: 'Ivan Ivanov'
     },
-
     {
       imgSrc: '/src/assets/images/cast/6.jpg',
       imgAlt: 'Ivan Ivanov'
     },
-
     {
       imgSrc: '/src/assets/images/cast/7.jpg',
       imgAlt: 'Ivan Ivanov'
     },
-
+    {
+      imgSrc: '/src/assets/images/cast/8.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+    {
+      imgSrc: '/src/assets/images/cast/1.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+    {
+      imgSrc: '/src/assets/images/cast/2.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+    {
+      imgSrc: '/src/assets/images/cast/3.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+    {
+      imgSrc: '/src/assets/images/cast/4.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+    {
+      imgSrc: '/src/assets/images/cast/5.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+    {
+      imgSrc: '/src/assets/images/cast/6.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+    {
+      imgSrc: '/src/assets/images/cast/7.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
     {
       imgSrc: '/src/assets/images/cast/8.jpg',
       imgAlt: 'Ivan Ivanov'
@@ -141,7 +166,7 @@ const MovieDetails = () => {
         Detailed movie information
       </h2>
       <div className="movie-details__main">
-        <div className="movie-details__panel">
+        <div className="movie-details__panel movie-details__panel--description">
           <div className="movie-details__group">
             <h3 className="movie-details__title">Description</h3>
             <div className="movie-details__description">
@@ -179,7 +204,7 @@ const MovieDetails = () => {
             ))}
           </Slider>
         </div>
-        <div className="movie-details__panel">
+        <div className="movie-details__panel movie-details__panel--large-gap-y">
           <header className="movie-details__panel-header">
             <h3 className="movie-details__title">Reviews</h3>
             <Button
@@ -193,6 +218,7 @@ const MovieDetails = () => {
             navigationMode="rounded"
             isNavigationHiddenOnMobile={false}
             hasScrollbarOnMobile={false}
+            navigationJustifyContent="center"
             sliderParams={{
               slidesPerView: 2,
               slidesPerGroup: 2,
