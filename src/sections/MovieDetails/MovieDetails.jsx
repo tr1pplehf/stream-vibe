@@ -1,11 +1,115 @@
 import './MovieDetails.scss'
 import SliderNavigation from '@/components/Slider/components/SliderNavigation'
 import Slider from '@/components/Slider'
+import PersonCard from '@/components/PersonCard'
+import Button from '@/components/Button'
+import ReviewCard from '@/components/ReviewCard'
 
 const MovieDetails = (props) => {
   const {} = props
   const titleId = 'movie-details-title'
   const castSliderNavigationId = 'movie-card-slider-navigation'
+
+  const castItems = [
+    {
+      imgSrc: '/src/assets/images/cast/1.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+
+    {
+      imgSrc: '/src/assets/images/cast/2.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+
+    {
+      imgSrc: '/src/assets/images/cast/3.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+
+    {
+      imgSrc: '/src/assets/images/cast/4.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+
+    {
+      imgSrc: '/src/assets/images/cast/5.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+
+    {
+      imgSrc: '/src/assets/images/cast/6.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+
+    {
+      imgSrc: '/src/assets/images/cast/7.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+
+    {
+      imgSrc: '/src/assets/images/cast/8.jpg',
+      imgAlt: 'Ivan Ivanov'
+    },
+  ]
+
+  const reviewItems = [
+    {
+      name: 'Aniket Roy',
+      subtitle: 'From India',
+      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
+      ratingValue: 4.5,
+    },
+
+    {
+      name: 'Aniket Roy',
+      subtitle: 'From India',
+      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
+      ratingValue: 4.5,
+    },
+
+    {
+      name: 'Aniket Roy',
+      subtitle: 'From India',
+      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
+      ratingValue: 4.5,
+    },
+
+    {
+      name: 'Aniket Roy',
+      subtitle: 'From India',
+      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
+      ratingValue: 4.5,
+    },
+
+    {
+      name: 'Aniket Roy',
+      subtitle: 'From India',
+      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
+      ratingValue: 4.5,
+    },
+
+    {
+      name: 'Aniket Roy',
+      subtitle: 'From India',
+      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
+      ratingValue: 4.5,
+    },
+
+    {
+      name: 'Aniket Roy',
+      subtitle: 'From India',
+      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
+      ratingValue: 4.5,
+    },
+
+    {
+      name: 'Aniket Roy',
+      subtitle: 'From India',
+      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
+      ratingValue: 4.5,
+    },
+
+  ]
 
   return (
     <section
@@ -52,11 +156,47 @@ const MovieDetails = (props) => {
               }
             }}
           >
-
+            {castItems.map((castItem, index) => (
+              <PersonCard {...castItem} key={index} />
+            ))}
           </Slider>
         </div>
         <div className="movie-details__panel">
-
+          <header className="movie-details__panel-header">
+            <h3 className="movie-details__title">Reviews</h3>
+            <Button
+              mode="black-08"
+              iconSrc="/src/assets/sprite/plus.svg"
+              label="Add your review"
+              href="/"
+            />
+          </header>
+          <Slider
+            navigationMode="rounded"
+            isNavigationHiddenOnMobile={false}
+            hasScrollbarOnMobile={false}
+            sliderParams={{
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              breakpoints: {
+                0: {
+                  slidesPerView: 1,
+                  slidesPerGroup: 1,
+                  spaceBetween: 16,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  slidesPerGroup: 2,
+                  spaceBetween: 20,
+                  allowTouchMove: false,
+                }
+              }
+            }}
+          >
+            {reviewItems.map((reviewItem, index) => (
+              <ReviewCard {...reviewItem} key={index} />
+            ))}
+          </Slider>
         </div>
       </div>
       <aside className="movie-details__info">
