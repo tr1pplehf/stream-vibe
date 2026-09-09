@@ -31,6 +31,9 @@
   }
 
   &__button {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
     position: relative;
     padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
     border-radius: var(--border-radius-m);
