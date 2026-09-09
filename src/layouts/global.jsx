@@ -13,8 +13,7 @@ export default function (props) {
     isHeaderFixed,
   } = props
 
-  return (
-    <>
+  return (<>
       <Head
         htmlAttributes={{ lang: 'en' }}
       >
@@ -45,12 +44,14 @@ export default function (props) {
           href="/site.webmanifest"
         />
       </Head>
-      <Header url={url} isFixed={isHeaderFixed} />
+      <Header
+        url={url}
+        isFixed={isHeaderFixed}
+      />
       <Content isResetPaddingTop={isHeaderFixed}>
         {children}
         <Banner />
       </Content>
       <Footer />
-    </>
-  )
+    </>)
 }
