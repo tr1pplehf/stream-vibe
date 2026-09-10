@@ -20,7 +20,7 @@
       + var(--selectButtonPaddingX)
       + var(--selectButtonGapX)
     );
-    background-color: var(--selectButtonArrowIconUrl);
+    background-image: var(--selectButtonArrowIconUrl);
     background-position: calc(100% - var(--selectButtonPaddingX)) 50%;
     background-size: var(--selectButtonArrowIconSize);
     background-repeat: no-repeat;
