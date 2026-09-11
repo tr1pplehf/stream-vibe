@@ -4,8 +4,8 @@ import SliderNavigation from './components/SliderNavigation'
 import classNames from 'classnames'
 
 const defaultSliderParams = {
-  slidesPerView: 5,
-  slidesPerGroup: 5,
+  slidesPerView: 4,
+  slidesPerGroup: 4,
   spaceBetween: 30,
   breakpoints: {
     0: {
