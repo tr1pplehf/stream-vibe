@@ -93,13 +93,3 @@ a {
 :has(.swiper) {
   min-width: 0;
 }
-
-
-//Скрытие ненужных секций на время верстки
-/*
-.header,
-.content > *:not(:nth-last-child(2)),
-.footer {
-  display: none !important;
-}
-*/

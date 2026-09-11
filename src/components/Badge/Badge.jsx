@@ -21,7 +21,7 @@ const Badge = (props) => {
     <div
       className={classNames(className, 'badge', {
         [`badge--${mode}`]: mode,
-        [`badge--big}`]: isBig,
+        [`badge--big`]: isBig,
       })}
     >
       {iconSrc && (

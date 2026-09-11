@@ -48,12 +48,14 @@
 
     &-link {
       &:not(:last-child) {
-        padding-right: 20px;
-        border-right: var(--border);
-      }
+        align-items: center;
 
-      &:not(:first-child) {
-        padding-left: 20px;
+        &::after {
+          content: '';
+          height: 1em;
+          margin-inline: fluid-to-laptop(20, 16);
+          border-right: var(--border);
+        }
       }
     }
   }

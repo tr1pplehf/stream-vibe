@@ -59,8 +59,17 @@ const MovieCard = (props) => {
           </Badge>
         )}
         {released && (
-          <Badge className="movie-card__released-badge">
-            Released at <time className="movie-card__released-badge-label" dateTime={released.dateTime}>{released.label}</time>
+          <Badge
+            className="movie-card__released-badge"
+            isBig
+          >
+            Released at&nbsp;
+            <time
+              className="movie-card__released-badge-label"
+              dateTime={released.dateTime}
+            >
+              {released.label}
+            </time>
           </Badge>
         )}
 
