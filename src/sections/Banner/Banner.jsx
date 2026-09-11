@@ -1,8 +1,7 @@
 import './Banner.scss'
 import Button from '@/components/Button'
 
-const Banner = (props) => {
-  const {} = props
+const Banner = () => {
   const titleId = 'banner-title'
 
   return (

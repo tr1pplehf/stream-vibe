@@ -7,6 +7,11 @@ import ReviewCard from '@/components/ReviewCard'
 import Icon from '@/components/Icon'
 import Tags from '@/components/Tags'
 import Ratings from '@/components/Ratings'
+import castItems from './items/castItems'
+import reviewItems from './items/reviewItems'
+import tagsItems from './items/tagsItems'
+import ratingItems from './items/ratingItems'
+import genresItems from './items/genresItems'
 
 const MovieDetails = (props) => {
   const {
@@ -15,148 +20,6 @@ const MovieDetails = (props) => {
 
   const titleId = 'movie-details-title'
   const castSliderNavigationId = 'movie-cast-slider-navigation'
-  const castItems = [
-    {
-      imgSrc: '/src/assets/images/cast/1.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/2.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/3.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/4.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/5.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/6.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/7.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/8.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/1.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/2.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/3.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/4.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/5.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/6.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/7.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-    {
-      imgSrc: '/src/assets/images/cast/8.jpg',
-      imgAlt: 'Ivan Ivanov'
-    },
-  ]
-  const reviewItems = [
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-
-    {
-      name: 'Aniket Roy',
-      subtitle: 'From India',
-      description: 'This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.',
-      ratingValue: 4.5,
-    },
-
-  ]
-  const tagsItems = [
-    'English',
-    'Hindi',
-    'Tamil',
-    'Telegu',
-    'Kannada',
-  ]
-  const ratingItems = [
-    {
-      title: 'IMDb',
-      ratingValue: 4.5,
-    },
-    {
-      title: 'StreamVibe',
-      ratingValue: 4,
-    },
-  ]
-  const genresItems = ['Action', 'Adventure']
 
   return (
     <section

@@ -5,8 +5,7 @@ import Checkbox from '@/components/Checkbox'
 import Button from '@/components/Button'
 import Select from '@/components/Select'
 
-const Support = (props) => {
-  const {} = props
+const Support = () => {
   const titleId = 'support-title'
 
   return (

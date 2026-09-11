@@ -114,6 +114,7 @@ const PlansComparison = () => {
       ]
     },
   ]
+
   const tabsItems = headCells
     .filter((headCell) => headCell.tabsTitle)
     .map((headCell, headCellIndex) => ({

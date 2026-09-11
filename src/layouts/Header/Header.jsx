@@ -3,30 +3,13 @@ import Logo from '@/components/Logo'
 import classNames from 'classnames'
 import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
+import menuItems from './Items/menuItems'
 
 const Header = (props) => {
   const {
     url,
     isFixed,
   } = props
-  const menuItems = [
-    {
-      label: 'Home',
-      href: '/'
-    },
-    {
-      label: 'Movies & Shows',
-      href: '/movies'
-    },
-    {
-      label: 'Support',
-      href: '/support'
-    },
-    {
-      label: 'Subscriptions',
-      href: '/subscriptions'
-    },
-  ]
 
   return (
     <header

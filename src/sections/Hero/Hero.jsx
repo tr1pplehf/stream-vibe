@@ -2,8 +2,7 @@ import './Hero.scss'
 import Button from '@/components/Button'
 import playImgSrc from '@/assets/images/play.svg'
 
-const Hero = (props) => {
-  const {} = props
+const Hero = () => {
   const playButtonTitle = 'Play Video'
   const titleId = 'hero-title'
 

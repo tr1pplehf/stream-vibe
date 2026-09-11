@@ -1,54 +1,9 @@
 import './Footer.scss'
 import Socials from '@/components/Socials'
+import menuItems from './items/menuItems'
+import extraLinksItems from './items/extraLinkItems'
 
-const Footer = (props) => {
-  const {} = props
-  const menuItems = [
-    {
-      title: 'Home',
-      links: ['Categories', 'Devices', 'Pricing', 'FAQ'],
-      href: '/',
-    },
-    {
-      title: 'Movies',
-      links: ['Gernes', 'Trending', 'New Release', 'Popular'],
-      href: '/movies',
-    },
-    {
-      title: 'Shows',
-      links: ['Gernes', 'Trending', 'New Release', 'Popular'],
-      href: '/shows',
-    },
-    {
-      title: 'Support',
-      links: ['Contact Us'],
-      href: '/support',
-    },
-    {
-      title: 'Subscription',
-      links: ['Plans', 'Features'],
-      href: '/subscriptions',
-    },
-    {
-      title: 'Connect With Us',
-      socialLinks: [
-        {
-          label: 'Facebook',
-          iconSrc: "/src/assets/sprite/facebook.svg"
-        },
-        {
-          label: 'Twitter',
-          iconSrc: "/src/assets/sprite/twitter.svg"
-        },
-        {
-          label: 'LinkedIn',
-          iconSrc: "/src/assets/sprite/linked-in.svg"
-        }
-      ]
-    }
-  ]
-  const extraLinks = ['Terms of Use', 'Privacy Policy', 'Cookie Policy']
-
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__inner container">
@@ -75,10 +30,10 @@ const Footer = (props) => {
         </nav>
         <div className="footer__extra">
           <p className="footer__copyright">
-            @<time dateTime="2023">2023</time> StreamVibe, All Rights Reserved.
+            @<time dateTime="2026">2026</time> StreamVibe, All Rights Reserved.
           </p>
           <div className="footer__extra-links">
-            {extraLinks.map((link, index) => (
+            {extraLinksItems.map((link, index) => (
               <a className="footer__extra-link" href="/" key={index}>{link}</a>
             ))}
           </div>

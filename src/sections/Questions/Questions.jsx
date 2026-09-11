@@ -3,20 +3,9 @@ import Section from '@/layouts/Sections'
 import Button from '@/components/Button'
 import AccordionGroup from '@/components/AccordionGroup'
 import Accordion from '@/components/Accordion'
+import questionItems from './items/questionItems'
 
-const Questions = (props) => {
-  const {} = props
-  const questionItems = [
-    'What is StreamVibe?',
-    'How much does StreamVibe cost?',
-    'What content is available on StreamVibe?',
-    'How can I watch StreamVibe?',
-    'How do I sign up for StreamVibe?',
-    'What is the StreamVibe free trial?',
-    'How do I contact StreamVibe customer support?',
-    'What are the StreamVibe payment methods?',
-  ]
-
+const Questions = () => {
   return (
     <Section
       title="Frequently Asked Questions"

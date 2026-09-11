@@ -1,29 +1,28 @@
 import './Collections.scss'
 import Tabs from '@/components/Tabs'
-import collectionGroups from './collectionGroups'
 import getIdFromTitle from '@/utils/getIdFromTitle'
 import Section from '@/layouts/Sections'
 import SliderNavigation from '@/components/Slider/components/SliderNavigation'
 import Slider from '@/components/Slider'
 import CategoryCard from '@/components/CategoryCard'
 import MovieCard from '@/components/MovieCard'
+import collectionItems from './items/collectionItems'
 
-const Collections = (props) => {
-  const {} = props
+const Collections = () => {
   return (
     <Tabs
       className="collections container"
       title="collections"
       isEnableOnlyOnMobile
-      items={collectionGroups.map((collectionGroup) => ({
-        isActive: collectionGroup.isActive,
-        title: collectionGroup.title,
+      items={collectionItems.map((collectionItems) => ({
+        isActive: collectionItems.isActive,
+        title: collectionItems.title,
         children: (
           <div className="collections__group">
             <p className="collections__title hidden-mobile">
-              {collectionGroup.title}
+              {collectionItems.title}
             </p>
-            {collectionGroup.items.map((collectionItem, index) => {
+            {collectionItems.items.map((collectionItem, index) => {
               const {
                 title,
                 categoryItems,
@@ -31,7 +30,7 @@ const Collections = (props) => {
                 sliderParams,
               } = collectionItem
 
-              const titleFormatted = `${getIdFromTitle(collectionGroup.title)}-${getIdFromTitle(title)}`
+              const titleFormatted = `${getIdFromTitle(collectionItems.title)}-${getIdFromTitle(title)}`
               const titleId = `${titleFormatted}-title`
               const sliderNavigationId = `${titleFormatted}-slider-navigation`
 

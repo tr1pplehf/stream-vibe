@@ -1,4 +1,4 @@
-const planGroups = [
+const planItems = [
   {
     title: 'Monthly',
     isActive: true,
@@ -60,4 +60,4 @@ const planGroups = [
   },
 ]
 
-export default planGroups
+export default planItems

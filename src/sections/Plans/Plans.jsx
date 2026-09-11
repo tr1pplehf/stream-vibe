@@ -1,10 +1,10 @@
 import './Plans.scss'
 import Section from '@/layouts/Sections'
 import Grid from '@/components/Grid'
-import planGroups from './planGroups'
 import PlanCard from '@/components/PlanCard'
 import TabsNavigation from '@/components/Tabs/components/TabsNavigation'
 import Tabs from '@/components/Tabs'
+import planItems from './items/planItems'
 
 const Plans = () => {
   const tabsTitle = 'plans-tabs'
@@ -19,14 +19,14 @@ const Plans = () => {
         <TabsNavigation
           title={tabsTitle}
           id={tabsNavigationId}
-          items={planGroups}
+          items={planItems}
         />
       )}
     >
       <Tabs
         title={tabsTitle}
         navigationTargetElementId={tabsNavigationId}
-        items={planGroups.map((planGroup) => ({
+        items={planItems.map((planGroup) => ({
           title: planGroup.title,
           isActive: planGroup.isActive,
           children: (

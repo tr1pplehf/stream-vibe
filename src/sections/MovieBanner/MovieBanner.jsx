@@ -1,8 +1,7 @@
 import './MovieBanner.scss'
 import MovieBannerCard from '@/components/MovieBannerCard'
 
-const MovieBanner = (props) => {
-  const {} = props
+const MovieBanner = () => {
   const titleId = 'movie-banner-title'
 
   return (

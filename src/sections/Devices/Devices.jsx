@@ -2,42 +2,9 @@ import './Devices.scss'
 import Section from '@/layouts/Sections'
 import DeviceCard from '@/components/DeviceCard'
 import Grid from '@/components/Grid'
+import deviceItems from './items/deviceItems'
 
-const Devices = (props) => {
-  const {} = props
-  const deviceItems = [
-    {
-      title: 'Smartphones',
-      description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-      imgSrc: '/src/assets/sprite/smartphone.svg'
-    },
-    {
-      title: 'Tablet',
-      description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-      imgSrc: '/src/assets/sprite/tablet.svg'
-    },
-    {
-      title: 'Smart TV',
-      description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-      imgSrc: '/src/assets/sprite/smart-tv.svg'
-    },
-    {
-      title: 'Laptops',
-      description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-      imgSrc: '/src/assets/sprite/laptop.svg'
-    },
-    {
-      title: 'Gaming Consoles',
-      description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-      imgSrc: '/src/assets/sprite/gaming-console.svg'
-    },
-    {
-      title: 'VR Headsets ',
-      description: 'StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store',
-      imgSrc: '/src/assets/sprite/vr-headset.svg'
-    },
-  ]
-
+const Devices = () => {
   return (
     <Section
       title="We Provide you streaming experience across various devices."

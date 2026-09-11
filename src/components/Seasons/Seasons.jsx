@@ -1,12 +1,10 @@
 import './Seasons.scss'
 import AccordionGroup from '@/components/AccordionGroup'
-import seasonItems from './seasonItems'
 import Accordion from '@/components/Accordion'
 import EpisodeCard from '@/components/EpisodeCard'
+import seasonItems from './items/seasonItems'
 
-const Seasons = (props) => {
-  const {} = props
-
+const Seasons = () => {
   return (
     <AccordionGroup
       className="seasons"

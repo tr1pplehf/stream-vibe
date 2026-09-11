@@ -1,6 +1,6 @@
 import categoryItems from '@/sections/Categories/categoryItems'
 
-const collectionGroups = [
+const collectionItems = [
   {
     isActive: true,
     title: 'Movies',
@@ -1381,7 +1381,6 @@ const collectionGroups = [
       },
     ]
   },
-
 ]
 
-export default collectionGroups
+export default collectionItems
