@@ -27,7 +27,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 10px;
 
     &::after {
       @include abs-cover();
@@ -46,6 +46,7 @@
 
   &__image {
     width: 100%;
+    height: fluid(200, 100);
     object-fit: cover;
     border-radius: var(--border-radius-m);
 

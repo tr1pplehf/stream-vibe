@@ -19,8 +19,8 @@ const defaultSliderParams = {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 20,
     },
     1024: {

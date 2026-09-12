@@ -8,6 +8,7 @@
   &__image {
     width: 100%;
     min-height: fluid(835, 468);
+    max-height: 835px;
     object-fit: cover;
   }
 
@@ -40,6 +41,8 @@
   }
 
   &__description {
+    @include fluid-text(22, 18);
+
     max-width: fluid-to-laptop(1254, 960);
   }
 
