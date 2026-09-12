@@ -30,7 +30,7 @@ const Footer = () => {
         </nav>
         <div className="footer__extra">
           <p className="footer__copyright">
-            @<time dateTime="2026">2026</time> StreamVibe, All Rights Reserved.
+            @<time dateTime="2026">2026</time> AnimeVibe, All Rights Reserved.
           </p>
           <div className="footer__extra-links">
             {extraLinksItems.map((link, index) => (

@@ -13,7 +13,7 @@ const Banner = () => {
         <div className="banner__body">
           <h2 className="banner__title" id={titleId}>Start your free trial today!</h2>
           <div className="banner__description">
-            <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+            <p>This is a clear and concise call to action that encourages users to sign up for a free trial of AnimeVibe.</p>
           </div>
         </div>
         <Button

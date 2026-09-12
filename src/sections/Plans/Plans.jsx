@@ -14,7 +14,7 @@ const Plans = () => {
     <Section
       title="Choose the plan that's right for you"
       titleId="plans-title"
-      description="Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!"
+      description="Join AnimeVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!"
       actions={(
         <TabsNavigation
           title={tabsTitle}

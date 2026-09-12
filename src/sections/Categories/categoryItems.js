@@ -138,8 +138,6 @@ const categoryItems = [
       '/src/assets/images/categories/horror/4.jpg',
     ]
   },
-
-
 ]
 
 export default categoryItems
