@@ -21,7 +21,7 @@ export default function (props) {
       <Head
         htmlAttributes={{ lang: 'en' }}
       >
-        <title>{`Stream Vibe | ${title}`}</title>
+        <title>{`Anime Vibe | ${title}`}</title>
         <script
           src="/src/main.js"
           type="module"

@@ -26,7 +26,9 @@ const Support = () => {
         </div>
         <Image
           className="support__image"
-          src="/src/assets/images/support/1.png"
+          src="/src/assets/images/general/bg.png"
+          width={400}
+          height={400}
         />
       </div>
       <form

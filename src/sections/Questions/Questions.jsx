@@ -10,7 +10,7 @@ const Questions = () => {
     <Section
       title="Frequently Asked Questions"
       titleId="questions-title"
-      description="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
+      description="Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about AnimeVibe."
       actions={(
         <Button
           label="Ask a Question"
@@ -19,7 +19,7 @@ const Questions = () => {
       )}
     >
       <AccordionGroup columns="2">
-        {questionItems.map((question, index) => (
+        {questionItems.map(({ question, answer }, index) => (
           <Accordion
             title={question}
             id={`question-${index}`}
@@ -27,7 +27,7 @@ const Questions = () => {
             isOpen={index === 0}
             key={index}
           >
-            <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.</p>
+            <p>{answer}</p>
           </Accordion>
         ))}
       </AccordionGroup>
