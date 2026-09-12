@@ -18,23 +18,23 @@ export default function (props) {
   } = props
 
   return (<>
-      <Head
-        htmlAttributes={{ lang: 'en' }}
-      >
-        <title>{`AnimeVibe | ${title}`}</title>
-        <script
-          src="/src/main.js"
-          type="module"
-        />
-        <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
+    <Head
+      htmlAttributes={{ lang: 'en' }}
+    >
+      <title>{`AnimeVibe | ${title}`}</title>
+      <script
+        src="/src/main.js"
+        type="module"
+      />
+      <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
         <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
         <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
         <link rel="manifest" href={manifest} />
-      </Head>
-      <Header
-        url={url}
-        isFixed={isHeaderFixed}
-      />
+    </Head>
+    <Header
+      url={url}
+      isFixed={isHeaderFixed}
+    />
       <Content isResetPaddingTop={isHeaderFixed}>
         {children}
         <Banner />
