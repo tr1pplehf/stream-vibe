@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
   const isProd = mode === 'production'
 
   return {
-    base: isProd ? 'anime-vibe/' : '/',
+    base: isProd ? '/anime-vibe/' : '/',
     plugins: [
       pluginSsg({
         layout: "/src/layouts/global.{tsx,jsx}",

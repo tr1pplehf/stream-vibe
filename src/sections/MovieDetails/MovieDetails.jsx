@@ -92,7 +92,7 @@ const MovieDetails = (props) => {
           <Slider
             navigationMode="rounded"
             isNavigationHiddenOnMobile={false}
-            hasScrollbarOnMobile={false}
+            hasScrollbarOnMobile={true}
             navigationJustifyContent="center"
             sliderParams={{
               slidesPerView: 2,
