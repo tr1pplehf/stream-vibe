@@ -4,6 +4,7 @@ import Devices from '@/sections/Devices'
 import Questions from '@/sections/Questions'
 import Plans from '@/sections/Plans'
 
+
 export const metadata = {
   title: 'Home',
   isHeaderFixed: true,
@@ -12,6 +13,7 @@ export const metadata = {
 export default () => {
   return (
     <>
+      {/*<Carousel />*/}
       <Hero />
       <Categories />
       <Devices />

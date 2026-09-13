@@ -1,6 +1,7 @@
 import './Hero.scss'
 import Button from '@/components/Button'
 import { getUrl } from '@/utils/getUrl'
+import Carousel from '@/sections/Carousel'
 
 const Hero = () => {
   const titleId = 'hero-title'
@@ -10,7 +11,8 @@ const Hero = () => {
       className="hero"
       aria-labelledby={titleId}
     >
-      <div className="hero__pano"></div>
+      <Carousel />
+      {/*<div className="hero__pano"></div>*/}
       <div className="hero__body">
         <div className="hero__body-inner container">
           <h1 className="hero__title" id={titleId}>

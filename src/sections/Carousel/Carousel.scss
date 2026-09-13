@@ -1,0 +1,94 @@
+.carousel {
+  position: relative;
+  padding-top: calc(var(--section-padding-y) + 40px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  overflow: hidden;
+
+  &::after {
+    --heroGradientColorStart: var(--color-black-08);
+    --heroGradientColorEnd: transparent 60.5%;
+
+    @include abs-cover;
+
+    content: '';
+    pointer-events: none;
+    flex-grow: 1;
+    background:
+      linear-gradient(
+        to bottom,
+        var(--heroGradientColorStart),
+        var(--heroGradientColorEnd)
+      ),
+      linear-gradient(
+        to top,
+        var(--heroGradientColorStart),
+        var(--heroGradientColorEnd)
+      );
+  }
+
+  @include mobile {
+    min-height: 639px;
+  }
+
+  &__groups {
+    display: flex;
+    width: max-content;
+
+    animation: scroll-left 60s infinite linear;
+
+    &--reverse {
+      animation-name: scroll-right;
+    }
+  }
+
+  &__group {
+    @include flex-center;
+
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    gap: 32px;
+    padding-right: 32px;
+  }
+
+  &__card {
+    @include square(#{fluid(225, 75)});
+    
+    flex-shrink: 0;
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+      scale: 1.05;
+      filter: brightness(110%);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-l);
+    object-fit: cover;
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

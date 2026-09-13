@@ -1,6 +1,6 @@
 import getParams from '@/utils/getParams'
 import Swiper from 'swiper'
-import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules'
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules'
 
 const rootSelector = '[data-js-slider]'
 
@@ -30,7 +30,7 @@ class Slider {
   init() {
     new Swiper(this.swiperElement, {
         ...this.params.sliderParams,
-        modules: [Navigation, Pagination, Scrollbar, Autoplay],
+        modules: [Navigation, Pagination, Scrollbar],
         navigation: {
           prevEl: this.previousButtonElement,
           nextEl: this.nextButtonElement,
