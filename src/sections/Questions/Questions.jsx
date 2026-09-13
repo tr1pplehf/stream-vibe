@@ -4,6 +4,7 @@ import Button from '@/components/Button'
 import AccordionGroup from '@/components/AccordionGroup'
 import Accordion from '@/components/Accordion'
 import questionItems from './items/questionItems'
+import { getUrl } from '@/utils/getUrl'
 
 const Questions = () => {
   return (
@@ -14,7 +15,7 @@ const Questions = () => {
       actions={(
         <Button
           label="Ask a Question"
-          href="/support"
+          href={getUrl("/support")}
         />
       )}
     >

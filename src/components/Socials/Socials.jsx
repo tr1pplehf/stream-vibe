@@ -1,6 +1,7 @@
 import './Socials.scss'
 import classNames from 'classnames'
 import Button from '@/components/Button'
+import { getUrl } from '@/utils/getUrl'
 
 const Socials = (props) => {
   const {
@@ -18,7 +19,7 @@ const Socials = (props) => {
             <Button
               className="soc1als__link"
               mode="black-10"
-              href="/"
+              href={getUrl("/")}
               target="_blank"
               label={label}
               isLabelHidden

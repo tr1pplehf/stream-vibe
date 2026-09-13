@@ -1,5 +1,6 @@
 import './Hero.scss'
 import Button from '@/components/Button'
+import { getUrl } from '@/utils/getUrl'
 
 const Hero = () => {
   const titleId = 'hero-title'
@@ -22,7 +23,7 @@ const Hero = () => {
             className="hero__button"
             iconSrc="/src/assets/sprite/play.svg"
             label="Start Watching Now"
-            href="/movies"
+            href={getUrl("/movies")}
             hasFillIcon
           />
         </div>

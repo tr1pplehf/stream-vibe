@@ -2,6 +2,7 @@ import './CategoryCard.scss'
 import { Image } from 'minista/assets'
 import Icon from '@/components/Icon'
 import Badge from '@/components/Badge'
+import { getUrl } from '@/utils/getUrl'
 
 const CategoryCard = (props) => {
   const {
@@ -11,7 +12,7 @@ const CategoryCard = (props) => {
   } = props
 
   return (
-    <a className="category-card" href="/movies">
+    <a className="category-card" href={getUrl("/movies")}>
       <div className="category-card__images">
         {images.map((imgSrc, index) => (
           <Image

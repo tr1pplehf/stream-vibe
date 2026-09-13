@@ -2,6 +2,7 @@ import './Footer.scss'
 import Socials from '@/components/Socials'
 import menuItems from './items/menuItems'
 import extraLinksItems from './items/extraLinkItems'
+import { getUrl } from '@/utils/getUrl'
 
 const Footer = () => {
   return (
@@ -10,12 +11,12 @@ const Footer = () => {
         <nav className="footer__menu">
           {menuItems.map(({ title, links, href, socialLinks }, index) => (
             <div className="footer__menu-column" key={index}>
-              <a className="footer__menu-title h6" href={href}>{title}</a>
+              <a className="footer__menu-title h6" href={getUrl(href)}>{title}</a>
               {links?.length > 0 && (
                 <ul className="footer__menu-list">
                   {links.map((link, index) => (
                     <li className="footer__menu-item" key={index}>
-                      <a className="footer__menu-link" href="/">
+                      <a className="footer__menu-link" href={getUrl("/")}>
                         {link}
                       </a>
                     </li>
@@ -34,7 +35,7 @@ const Footer = () => {
           </p>
           <div className="footer__extra-links">
             {extraLinksItems.map((link, index) => (
-              <a className="footer__extra-link" href="/" key={index}>{link}</a>
+              <a className="footer__extra-link" href={getUrl("/")} key={index}>{link}</a>
             ))}
           </div>
         </div>

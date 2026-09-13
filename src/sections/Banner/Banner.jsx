@@ -1,5 +1,6 @@
 import './Banner.scss'
 import Button from '@/components/Button'
+import { getUrl } from '@/utils/getUrl'
 
 const Banner = () => {
   const titleId = 'banner-title'
@@ -19,7 +20,7 @@ const Banner = () => {
         <Button
           className="banner__button"
           label="Start Free Trial"
-          href="/subscriptions"
+          href={getUrl("/subscriptions")}
         />
       </div>
     </section>
