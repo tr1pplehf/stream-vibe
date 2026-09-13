@@ -1,6 +1,6 @@
 import './Logo.scss'
 import classNames from 'classnames'
-import logoImgSrc from '@/assets/images/logo2.svg'
+import logoImgSrc from '@/assets/images/logo.svg'
 
 const Logo = (props) => {
   const {

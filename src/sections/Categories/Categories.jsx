@@ -1,5 +1,5 @@
 import './Categories.scss'
-import categoryItems from './categoryItems'
+import categoryItems from './items/categoryItems'
 import Section from '@/layouts/Sections'
 import CategoryCard from '@/components/CategoryCard'
 import Slider from '@/components/Slider'
