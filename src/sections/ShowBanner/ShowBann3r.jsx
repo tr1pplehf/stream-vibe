@@ -10,11 +10,11 @@ const ShowBann3r = () => {
       aria-labelledby={titleId}
     >
       <MovieBannerCard
-        title="Stranger Things"
+        title="Chainsaw Man"
         titleId={titleId}
         TitleTag="h1"
-        description="When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl."
-        imgSrc="/src/assets/images/show-banner/1.jpg"
+        description="An orphan in debt becomes a desperate fighter against demons. A bloody anime based on one of the most popular manga."
+        imgSrc="/src/assets/images/movie-banner/1.webp"
         isSmallPaddingY
       />
     </section>

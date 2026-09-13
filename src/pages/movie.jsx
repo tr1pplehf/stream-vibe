@@ -2,7 +2,7 @@ import MovieBanner from '@/sections/MovieBanner'
 import MovieDetails from '@/sections/MovieDetails'
 
 export const metadata = {
-  title: 'Movie - Kantara',
+  title: 'Chainsaw Man',
 }
 
 export default () => {

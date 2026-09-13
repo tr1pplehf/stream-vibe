@@ -7,8 +7,13 @@
     }
   }
 
+  &__list {
+    align-items: stretch;
+  }
+
   &__item {
     width: auto;
+    height: auto;
   }
 
   &__navigation {

@@ -11,6 +11,7 @@ const MovieBannerCard = (props) => {
     description,
     imgSrc,
     isSmallPaddingY = false,
+    href = "/movie",
   } = props
 
   return (
@@ -40,7 +41,8 @@ const MovieBannerCard = (props) => {
           <Button
             className="movie-banner-card__play-button"
             iconSrc="/src/assets/sprite/play.svg"
-            label="Play Now"
+            href={href}
+            label="Watch"
             hasFillIcon
           />
           <div className="movie-banner-card__actions">

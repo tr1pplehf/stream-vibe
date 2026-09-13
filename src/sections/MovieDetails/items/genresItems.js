@@ -1,6 +1,8 @@
 const genresItems = [
   'Action',
-  'Adventure',
+  'Dark fantasy',
+  'Supernatural horror',
+  'Comedy',
 ]
 
 export default genresItems

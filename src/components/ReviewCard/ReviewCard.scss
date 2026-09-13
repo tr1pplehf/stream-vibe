@@ -1,5 +1,7 @@
 .review-card {
-  display: grid;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   row-gap: fluid-to-laptop(20, 16);
   padding: fluid(40, 24);
   background-color: var(--color-black-06);
@@ -16,5 +18,13 @@
   &__name,
   &__subtitle {
     font-weight: 500;
+  }
+
+  .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  .swiper-slades {
+    height: auto;
   }
 }

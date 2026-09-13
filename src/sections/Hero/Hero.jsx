@@ -1,9 +1,7 @@
 import './Hero.scss'
 import Button from '@/components/Button'
-import playImgSrc from '@/assets/images/play.svg'
 
 const Hero = () => {
-  const playButtonTitle = 'Play Video'
   const titleId = 'hero-title'
 
   return (
@@ -11,24 +9,7 @@ const Hero = () => {
       className="hero"
       aria-labelledby={titleId}
     >
-      <div className="hero__pano">
-        <div className="hero__pano-inner container">
-          <button
-            className="hero__play-button"
-            type="button"
-            aria-label={playButtonTitle}
-            title={playButtonTitle}
-          >
-            <img
-              className="hero__play-button-image"
-              alt=""
-              src={playImgSrc}
-              width="470"
-              height="470"
-            />
-          </button>
-        </div>
-      </div>
+      <div className="hero__pano"></div>
       <div className="hero__body">
         <div className="hero__body-inner container">
           <h1 className="hero__title" id={titleId}>
@@ -41,6 +22,7 @@ const Hero = () => {
             className="hero__button"
             iconSrc="/src/assets/sprite/play.svg"
             label="Start Watching Now"
+            href="/movies"
             hasFillIcon
           />
         </div>

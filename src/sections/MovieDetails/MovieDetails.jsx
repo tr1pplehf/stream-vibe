@@ -45,7 +45,7 @@ const MovieDetails = (props) => {
           <div className="movie-details__group">
             <h3 className="movie-details__title">Description</h3>
             <div className="movie-details__description">
-              <p>A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
+              <p>Teenager Denji just wanted to live an ordinary life and eat his fill, but the debts left after his father’s death force the boy to eke out a half‑starved existence and live in a hovel. To pay off the yakuza, he has already sold some of his organs and even engages in illegal demon hunting, with the help of his unusual pet, Potita — a demonic creature with a chainsaw. One day, cunning bandits lure Denji into a trap and sacrifice him, but Potita doesn’t let the boy die. He splices his body and becomes the heart of his master — now Denji has enhanced regeneration and can also turn his limbs into chainsaws. The Public Safety Bureau hires such a valuable asset to hunt demons again. At his new job, the guy meets his colleagues — the melancholic hunter Aki, the hot‑tempered half‑demon Power — and falls in love with his mysterious boss, Makima.</p>
             </div>
           </div>
         </div>
@@ -154,16 +154,16 @@ const MovieDetails = (props) => {
             <div className="movie-details__group">
               <h3 className="movie-details__title">Director</h3>
               <PersonCard
-                name="Rishab Shetty"
-                subtitle="From India"
+                name="Ryu Nakayama"
+                subtitle="From Japan"
                 imgSrc="/src/assets/images/cast/director.jpg"
               />
             </div>
             <div className="movie-details__group">
               <h3 className="movie-details__title">Music</h3>
               <PersonCard
-                name="B. Ajaneesh Loknath"
-                subtitle="From India"
+                name="Kensuke Ushio"
+                subtitle="From Japan"
                 imgSrc="/src/assets/images/cast/music.jpg"
               />
             </div>

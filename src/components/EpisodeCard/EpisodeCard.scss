@@ -38,6 +38,12 @@
       grid-area: player;
     }
 
+    @include hover {
+      &::before {
+        background-image: none;
+      }
+    }
+
     &::before {
       @include abs-cover;
 

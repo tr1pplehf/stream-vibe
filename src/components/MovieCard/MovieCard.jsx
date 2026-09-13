@@ -21,7 +21,7 @@ const MovieCard = (props) => {
       href={href}
       title={`Watch ${title}`}
     >
-      <h3 className="visually-hidden">{title}</h3>
+      <h3 className="movie-card__title h6">{title}</h3>
       <Image
         className="movie-card__image"
         src={imgSrc}

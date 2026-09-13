@@ -10,11 +10,12 @@ const MovieBanner = () => {
       aria-labelledby={titleId}
     >
       <MovieBannerCard
-        title="Kantara"
+        title="Chainsaw Man"
         titleId={titleId}
         TitleTag="h1"
-        description="A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands."
-        imgSrc="/src/assets/images/movie-banner/2.jpg"
+        href="/show"
+        description="An orphan in debt becomes a desperate fighter against demons. A bloody anime based on one of the most popular manga."
+        imgSrc="/src/assets/images/movie-banner/1.webp"
         isSmallPaddingY
       />
     </section>

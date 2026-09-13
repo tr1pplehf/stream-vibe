@@ -1,9 +1,10 @@
 const tagsItems = [
+  'Japanese',
+  'Сhinese',
   'English',
-  'Hindi',
-  'Tamil',
-  'Telegu',
-  'Kannada',
+  'Russian',
+  'French',
+  'Italian',
 ]
 
 export default tagsItems

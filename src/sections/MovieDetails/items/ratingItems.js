@@ -4,8 +4,8 @@ const ratingItems = [
     ratingValue: 4.5,
   },
   {
-    title: 'StreamVibe',
-    ratingValue: 4,
+    title: 'AnimeVibe',
+    ratingValue: 5,
   },
 ]
 
