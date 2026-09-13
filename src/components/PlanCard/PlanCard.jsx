@@ -1,5 +1,6 @@
 import './PlanCard.scss'
 import Button from '@/components/Button'
+import { getUrl } from '@/utils/getUrl'
 
 const PlanCard = (props) => {
   const {
@@ -23,12 +24,12 @@ const PlanCard = (props) => {
       <div className="plan-card__actions">
         <Button
           label="Start Free Trial"
-          href="/subscriptions"
+          href={getUrl("/subscriptions")}
           mode="black-08"
         />
         <Button
           label="Choose Plan"
-          href="/subscriptions"
+          href={getUrl("/subscriptions")}
         />
       </div>
     </div>

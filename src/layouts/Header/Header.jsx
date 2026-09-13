@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
 import menuItems from './Items/menuItems'
+import { getUrl } from '@/utils/getUrl'
 
 const Header = (props) => {
   const {
@@ -38,7 +39,7 @@ const Header = (props) => {
                     className={classNames('header__menu-link', {
                       'is-active': href === url
                     })}
-                    href={href}
+                    href={getUrl(href)}
                   >
                     {label}
                   </a>

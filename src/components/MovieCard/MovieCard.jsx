@@ -2,6 +2,7 @@ import './MovieCard.scss'
 import { Image } from 'minista/assets'
 import Badge from '@/components/Badge'
 import RatingView from '@/components/RatingView'
+import { getUrl } from '@/utils/getUrl'
 
 const MovieCard = (props) => {
   const {
@@ -18,7 +19,7 @@ const MovieCard = (props) => {
   return (
     <a
       className="movie-card"
-      href={href}
+      href={getUrl(href)}
       title={`Watch ${title}`}
     >
       <h3 className="movie-card__title h6">{title}</h3>

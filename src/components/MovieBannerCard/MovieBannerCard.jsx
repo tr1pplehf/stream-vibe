@@ -2,6 +2,7 @@ import './MovieBannerCard.scss'
 import { Image } from 'minista/assets'
 import Button from '@/components/Button'
 import classNames from 'classnames'
+import { getUrl } from '@/utils/getUrl'
 
 const MovieBannerCard = (props) => {
   const {
@@ -41,7 +42,7 @@ const MovieBannerCard = (props) => {
           <Button
             className="movie-banner-card__play-button"
             iconSrc="/src/assets/sprite/play.svg"
-            href={href}
+            href={getUrl(href)}
             label="Watch"
             hasFillIcon
           />

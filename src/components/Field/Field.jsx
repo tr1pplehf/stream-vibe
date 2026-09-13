@@ -38,9 +38,7 @@ const Field = (props) => {
         <span
           className="field__required-star"
           aria-hidden="true"
-        >
-            *
-          </span>
+        >*</span>
       )}
       </label>
       <div className="field__body">

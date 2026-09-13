@@ -2,27 +2,27 @@ const menuItems = [
   {
     title: 'Home',
     links: ['Categories', 'Devices', 'Pricing', 'FAQ'],
-    href: '/',
+    href: "/",
   },
   {
     title: 'Movies',
     links: ['Genres', 'Trending', 'New Release', 'Popular'],
-    href: '/movies',
+    href: "/movies",
   },
   {
     title: 'Shows',
     links: ['Genres', 'Trending', 'New Release', 'Popular'],
-    href: '/shows',
+    href: "/shows",
   },
   {
     title: 'Support',
     links: ['Contact Us'],
-    href: '/support',
+    href: "/support",
   },
   {
     title: 'Subscription',
     links: ['Plans', 'Features'],
-    href: '/subscriptions',
+    href: "/subscriptions",
   },
   {
     title: 'Connect With Us',
