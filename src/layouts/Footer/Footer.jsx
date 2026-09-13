@@ -16,7 +16,7 @@ const Footer = () => {
                 <ul className="footer__menu-list">
                   {links.map((link, index) => (
                     <li className="footer__menu-item" key={index}>
-                      <a className="footer__menu-link" href="/">
+                      <a className="footer__menu-link" href={getUrl("/")}>
                         {link}
                       </a>
                     </li>
@@ -35,7 +35,7 @@ const Footer = () => {
           </p>
           <div className="footer__extra-links">
             {extraLinksItems.map((link, index) => (
-              <a className="footer__extra-link" href="/" key={index}>{link}</a>
+              <a className="footer__extra-link" href={getUrl("/")} key={index}>{link}</a>
             ))}
           </div>
         </div>
