@@ -1,5 +1,5 @@
 {
-  "name": "minista-project",
+  "name": "animevibe",
   "scripts": {
     "dev": "minista",
     "build": "minista build",
