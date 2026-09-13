@@ -8,7 +8,7 @@ import {
 import path from 'path'
 
 export default defineConfig({
-  base: '/animevibe/',
+  base: '/anime-vibe/',
   plugins: [
     pluginSsg({
       layout: "/src/layouts/global.{tsx,jsx}",
