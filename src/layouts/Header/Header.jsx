@@ -39,7 +39,7 @@ const Header = (props) => {
                     className={classNames('header__menu-link', {
                       'is-active': href === url
                     })}
-                    href={getUrl({href})}
+                    href={getUrl(href)}
                   >
                     {label}
                   </a>
