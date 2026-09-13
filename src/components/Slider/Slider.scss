@@ -23,7 +23,7 @@
   &__scrollbar {
     @include abs-x;
 
-    top: calc(100% + 24px);
+    top: calc(100% + 12px);
     width: 80px;
     height: 5px;
     background-color: var(--color-black-20);
